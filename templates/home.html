@@ -1,0 +1,31 @@
+{% extends 'base.html'%}
+{%block content%}
+<h1 align='center'>Rohith Gurram</h1>
+{% comment %} <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+    <div class="col-md-9 px-0" text-align: center;>
+      <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
+      <div class="col-auto d-none d-lg-block">
+        <img align='right' src="https://drive.google.com/uc?export=view&id=1--wsP30zJ6aRagj_soT_RPB9p_6i8UiB" height=300px,width=300px/>
+      </div>
+      <p class="lead my-3">{% lorem 6 b random %}</p>
+      
+      
+    </div>
+
+</div> {% endcomment %}
+<div class="row mb-2">
+    <div class="col-md-12">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h2 class="d-inline-block mb-2">Rohith</h2>
+          <h4 class="mb-0">About</h4>
+          <p class="card-text mb-auto">{% lorem 6 b random %}</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+            <img  src="https://drive.google.com/uc?export=view&id=1--wsP30zJ6aRagj_soT_RPB9p_6i8UiB" height=300px,width=300px/>
+
+        </div>
+      </div>
+    </div>
+</div>
+{%endblock content%}

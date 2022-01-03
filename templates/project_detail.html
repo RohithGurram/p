@@ -1,0 +1,21 @@
+{%extends 'base.html'%}
+{% block content %}
+<div class="post-entry">
+    <h2 align='center'>{{ object.project_title }}</h2>
+    <main class="container">
+        <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+          <div class="col-md-6 px-0">
+              <h4>Description:</h4>
+            <p>{{ object.description }}</p>
+            <div class="row">
+                <div class="col-lg-4">
+                    {% if object.upload%}
+                    <img class="bd-placeholder-img rounded-circle" src="{{object.upload.url}}"  height=150px width=150px>
+                    {% endif %}
+                </div><!-- /.col-lg-4 -->
+            <p>Language used: {{object.Language_used}}</p>
+            <button class="btn btn-outline-secondary" type="button"><a style="text-decoration:none" href="{{object.link}}">Link</a></button>
+          </div>
+        </div>
+    
+{% endblock content %}
